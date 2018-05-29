@@ -7,14 +7,10 @@
     "type": "git",
     "url": "git+https://github.com/donejs-user/donejs-testee-coverage.git"
   },
-  "author": {
-    "name": "Ivo Pinheiro",
-    "email": "ivo.pinheiro@nokia.com",
-    "url": "https://donejs.com"
-  },
   "private": true,
   "scripts": {
-    "test": "testee test.html --browsers firefox --reporter Spec",
+    "test": "testee test.html --browsers chrome --reporter Spec",
+    "check-coverage": "testee test.html --coverage --config=testee-coverage-config.json",
     "start": "done-serve --port 8080",
     "develop": "done-serve --develop --port 8080",
     "build": "node build"

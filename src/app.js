@@ -9,7 +9,10 @@ const AppViewModel = DefineMap.extend({
     serialize: false
   },
   message: {
-    default: 'Hello World!',
+    default(){
+      const now = new Date();
+      return `Hello World! ${now.toString()}`;
+    },
     serialize: false
   },
   title: {
